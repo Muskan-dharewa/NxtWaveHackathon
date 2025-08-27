@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Droplets, Hand, AlertTriangle, CheckCircle, Volume2 } from "lucide-react";
+import { Droplets, Hand, AlertTriangle, CheckCircle, Volume2, VolumeX } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const SmartTapDemo = () => {
@@ -79,6 +79,27 @@ const SmartTapDemo = () => {
               </CardHeader>
               <CardContent>
                 <div className="relative bg-gradient-to-b from-water-accent/20 to-water-primary/10 rounded-lg p-8 h-64 flex flex-col items-center justify-center">
+                  {/* Buzzer visual */}
+                  <div className="absolute top-4 left-4">
+                    <div className={`flex items-center gap-2 p-2 rounded-lg transition-all duration-300 ${
+                      wasteDetected 
+                        ? 'bg-red-500/20 border-2 border-red-500 animate-pulse' 
+                        : 'bg-gray-100 border-2 border-gray-300'
+                    }`}>
+                      {wasteDetected ? (
+                        <Volume2 className="h-6 w-6 text-red-500 animate-bounce" />
+                      ) : (
+                        <VolumeX className="h-6 w-6 text-gray-400" />
+                      )}
+                      <span className={`text-xs font-bold ${wasteDetected ? 'text-red-500' : 'text-gray-400'}`}>
+                        {wasteDetected ? 'BEEP!' : 'BUZZER'}
+                      </span>
+                    </div>
+                    {wasteDetected && (
+                      <div className="absolute -inset-2 border-2 border-red-500 rounded-lg animate-ping opacity-75"></div>
+                    )}
+                  </div>
+
                   {/* Tap visual */}
                   <div className="relative mb-8">
                     <div className="w-16 h-8 bg-gray-300 rounded-t-lg border-4 border-gray-400"></div>
@@ -202,7 +223,7 @@ const SmartTapDemo = () => {
                     <h4 className="font-semibold mb-3 text-water-primary">Key Features:</h4>
                     <ul className="text-sm space-y-2 text-muted-foreground">
                       <li>• Motion sensor detection</li>
-                      <li>• Audio & visual alerts</li>
+                      <li>• Audio buzzer & visual alerts</li>
                       <li>• IoT data logging</li>
                       <li>• Mobile app integration</li>
                       <li>• Water usage analytics</li>
