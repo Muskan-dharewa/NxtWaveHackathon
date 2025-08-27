@@ -8,10 +8,14 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection />
-      <SmartTapDemo />
+      <div id="demo">
+        <SmartTapDemo />
+      </div>
       <WaterSafetyChecker />
       <ImpactSection />
-      <PartnershipSection />
+      <div id="partnership">
+        <PartnershipSection />
+      </div>
     </div>
   );
 };

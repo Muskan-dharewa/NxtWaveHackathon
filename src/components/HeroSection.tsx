@@ -57,10 +57,19 @@ const HeroSection = () => {
           </div>
           
           {/* Action buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <Button 
+              size="lg" 
+              className="bg-water-accent text-white hover:bg-water-accent/90 shadow-water text-lg px-8 py-6"
+              onClick={() => document.getElementById('partnership')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              <Droplets className="h-5 w-5 mr-2" />
+              Order Smart Tags
+            </Button>
             <Button 
               size="lg" 
               className="bg-white text-water-primary hover:bg-white/90 shadow-water text-lg px-8 py-6"
+              onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Zap className="h-5 w-5 mr-2" />
               Try Smart Tap Demo
@@ -69,6 +78,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg"
               className="border-white text-white hover:bg-white/10 backdrop-blur-sm text-lg px-8 py-6"
+              onClick={() => document.getElementById('partnership')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Users className="h-5 w-5 mr-2" />
               Partner with NGOs
