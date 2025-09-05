@@ -26,12 +26,13 @@ Accessibility features: voice alerts, haptic vibration, and local languages.
 Educates users on saving water and checking safety.
 
 Includes a live AI simulation demonstrating device operation and water safety analysis.
-Here you can access our site: https://muskan-dharewa.github.io/NxtWaveHackathon/
 
 Pre-order page and NGO partnership opportunities.
 
- Impact
+ <pre>Impact
  1 Saves water + prevents waterborne diseases.
  2 Works for households, schools, rural areas.
  3 Inclusive for visually impaired users.
  4 Scales to smart cities and government partnerships
+ </pre>
+ Here you can access our site: https://muskan-dharewa.github.io/NxtWaveHackathon/
