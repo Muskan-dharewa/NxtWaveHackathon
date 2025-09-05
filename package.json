@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
-    "homepage": "https://muskan-dharewa.github.io/smart-tap-demo"
+    "homepage": "https://muskan-dharewa.github.io/smart-tap-demo",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
