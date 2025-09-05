@@ -5,27 +5,18 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Base path for deployment (GitHub Pages)
-  base: "/NxtWaveHackathon/",
-
-  // Dev server configuration (for local development)
+  base: "/NxtWaveHackathon/", // GitHub Pages repo name
   server: {
-    host: "::", // listens on all IPv6 interfaces
+    host: "::",
     port: 8080,
   },
-
-  // Plugins
   plugins: [
-    react(),                        // React plugin
-    mode === "development" && componentTagger(), // Only in dev mode
+    react(),
+    mode === "development" && componentTagger(),
   ].filter(Boolean),
-
-  // Resolve aliases
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"), // '@' points to ./src
+      "@": path.resolve(__dirname, "./src"),
     },
   },
 }));
-
-
