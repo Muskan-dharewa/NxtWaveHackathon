@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://muskan-dharewa.github.io/smart-tap-demo",
+  "homepage": "https://muskan-dharewa.github.io/NxtWaveHackathon",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
