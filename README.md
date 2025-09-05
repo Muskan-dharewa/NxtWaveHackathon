@@ -1,4 +1,4 @@
-"Smart Water Guardian — saving every drop, ensuring every sip is safe.
+"Smart Water Guardian — saving every drop, ensuring every sip is safe."
 
 A smart, IoT-enabled water management system that helps users monitor water usage and ensure water safety. The system combines hardware, sensors, AI, and an inclusive mobile/web app to reduce wastage, ensure safety, and educate users.
 
