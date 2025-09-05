@@ -74,14 +74,6 @@ const HeroSection = () => {
               <Zap className="h-5 w-5 mr-2" />
               Try Smart Tap Demo
             </Button>
-            <Button 
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-water text-lg px-8 py-6"
-              onClick={() => document.getElementById('partnership')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              <Users className="h-5 w-5 mr-2" />
-              Partner with NGOs
-            </Button>
           </div>
           
           {/* Quick stats */}
