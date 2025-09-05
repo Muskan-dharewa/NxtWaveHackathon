@@ -75,9 +75,8 @@ const HeroSection = () => {
               Try Smart Tap Demo
             </Button>
             <Button 
-              variant="outline" 
               size="lg"
-              className="border-accent text-accent hover:bg-accent/10 backdrop-blur-sm text-lg px-8 py-6"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-water text-lg px-8 py-6"
               onClick={() => document.getElementById('partnership')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Users className="h-5 w-5 mr-2" />

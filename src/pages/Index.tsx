@@ -5,8 +5,8 @@ import ImpactSection from "@/components/ImpactSection";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <HeroSection />
       <Navigation />
+      <HeroSection />
       <ImpactSection />
     </div>
   );
