@@ -60,7 +60,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
-              className="bg-water-accent text-white hover:bg-water-accent/90 shadow-water text-lg px-8 py-6"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-water text-lg px-8 py-6"
               onClick={() => document.getElementById('partnership')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Droplets className="h-5 w-5 mr-2" />
@@ -68,7 +68,7 @@ const HeroSection = () => {
             </Button>
             <Button 
               size="lg" 
-              className="bg-white text-water-primary hover:bg-white/90 shadow-water text-lg px-8 py-6"
+              className="bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-water text-lg px-8 py-6"
               onClick={() => document.getElementById('demo')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Zap className="h-5 w-5 mr-2" />
@@ -77,7 +77,7 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white text-white hover:bg-white/10 backdrop-blur-sm text-lg px-8 py-6"
+              className="border-accent text-accent hover:bg-accent/10 backdrop-blur-sm text-lg px-8 py-6"
               onClick={() => document.getElementById('partnership')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <Users className="h-5 w-5 mr-2" />
