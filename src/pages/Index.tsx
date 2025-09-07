@@ -8,8 +8,7 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <ImpactSection />
-      
-      {/* Copyright Footer */}
+     
       <footer className="bg-background border-t py-8 mt-20">
         <div className="container mx-auto px-4 text-center">
           <p className="text-foreground font-medium">
