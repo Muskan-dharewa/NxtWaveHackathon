@@ -12,7 +12,7 @@ const CheckWater = () => {
             Check Your Water Quality
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Get instant AI-powered analysis of your water quality. Upload a photo or describe your water source to receive personalized safety recommendations.
+            Get instant AI-powered analysis of your water quality. Describe your water source to receive personalized safety recommendations.
           </p>
         </div>
         <WaterSafetyChecker />
